@@ -5,16 +5,22 @@ from fastapi.responses import HTMLResponse
 
 from fast_zero.schemas import Message
 
-app = FastAPI()
+app = FastAPI(title="Documentação FastAPI do zero")
 
 
-@app.get('/', status_code=HTTPStatus.OK, response_model=Message)
+@app.get(
+    '/', 
+    status_code=HTTPStatus.OK, 
+    response_model=Message
+)
 def read_root():
     return {'message': 'Olá Mundo!'}
 
 
 @app.get(
-    '/exercice-html', status_code=HTTPStatus.OK, response_class=HTMLResponse
+    '/exercice-html', 
+    status_code=HTTPStatus.OK, 
+    response_class=HTMLResponse
 )
 def exercice_02():
     return """
