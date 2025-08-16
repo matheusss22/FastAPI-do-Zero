@@ -2,7 +2,7 @@ from http import HTTPStatus
 
 from fastapi import FastAPI, HTTPException
 
-from fast_zero.schemas import Message, UserDB, UserList, UserPublic, UserSchema
+from src.schemas import Message, UserDB, UserList, UserPublic, UserSchema
 
 app = FastAPI(title='🚀 Documentação FastAPI 🚀')
 

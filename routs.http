@@ -1,12 +1,14 @@
-GET http://127.0.0.1:8080 HTTP/1.1
+### /
 
-###
+GET http://localhost:8080 HTTP/1.1
 
-GET http://127.0.0.1:8080/users HTTP/1.1
+### /users
 
-###
+GET http://localhost:8080/users HTTP/1.1
 
-POST http://127.0.0.1:8080/users HTTP/1.1
+### /users
+
+POST http://localhost:8080/users HTTP/1.1
 content-type: application/json
 
 {
@@ -15,9 +17,9 @@ content-type: application/json
   "password": "segredo"
 }
 
-###
+### /users
 
-PUT http://127.0.0.1:8080/users/2 HTTP/1.1
+PUT http://localhost:8080/users/1 HTTP/1.1
 content-type: application/json
 
 {
@@ -26,7 +28,6 @@ content-type: application/json
   "password": "segredo"
 }
 
-###
+### /users
 
-DELETE http://127.0.0.1:8080/users/1 HTTP/1.1
-
+DELETE http://localhost:8080/users/1 HTTP/1.1
