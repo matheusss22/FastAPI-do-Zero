@@ -1,0 +1,32 @@
+GET http://127.0.0.1:8080 HTTP/1.1
+
+###
+
+GET http://127.0.0.1:8080/users HTTP/1.1
+
+###
+
+POST http://127.0.0.1:8080/users HTTP/1.1
+content-type: application/json
+
+{
+  "username": "matheus",
+  "email": "matheus@example.com",
+  "password": "segredo"
+}
+
+###
+
+PUT http://127.0.0.1:8080/users/2 HTTP/1.1
+content-type: application/json
+
+{
+  "username": "gabriel",
+  "email": "gabriel@example.com",
+  "password": "segredo"
+}
+
+###
+
+DELETE http://127.0.0.1:8080/users/1 HTTP/1.1
+
